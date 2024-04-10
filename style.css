@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+}
+.worldClockBox{
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+    padding: 10px 20px;
+    border: 3px solid rgba(16, 210, 224, 0.6);
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(16, 210, 224, 0.6);
+    height: 600px;
+    margin-top: -30px;
+    background-color: black;
+    transition: 1s ease-in-out;
+}
+.worldClockBox1{
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+    padding: 10px 20px;
+    border: 3px solid rgba(16, 210, 224, 0.6);
+    width: 305px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(16, 210, 224, 0.6);
+    height: 570px;
+    margin-top: -30px;
+    background-color: black;
+    transition: 1s ease-in-out;
+}
+.wrapper.active .worldClockBox1{
+    transform: translateY(-450px);
+}
+h1{
+    margin-bottom: 98px;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 42px;
+    color: orange;
+}
+.h1-title{
+    margin-top: -1px;
+}
+.ixesha{
+    margin-bottom: 118px;
+    margin-left: 60px;
+    font-size: 40px;
+  color: orange;
+}
+
+.clock-system{
+    font-size: 15px;
+}
+.country{
+    font-size: 20px;
+    margin-left: 30px;
+    color: orange;
+}
+.ngubani{
+    margin-bottom: 68px;
+    font-size: 13px;
+    margin-left: 110px;
+    font-weight: normal;
+   color: orange;
+}
+.plus-sign{
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(239, 11, 68);
+}
+.role{
+    color: rgba(16, 210, 224, 0.6) ;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.role1{
+    margin-top: 113px;
+    margin-left: 120px;
+    font-size: 20px;
+    color: rgba(16, 210, 224, 0.6) ;
+}
+a{
+    text-decoration: none;
+}
+@media(max-width: 576px){
+    .world-clock-box{
+        width: 310px;
+        height: 500px;
+        margin-top: -50px;
+    }
+    h1{
+        font-size: 35px;
+        margin-bottom: 90px;
+    }
+    .ixesha{
+        margin-left: 60px;
+        margin-bottom: 70px;
+        font-size: 30px
+    }
+    .clock-system{
+        font-size: 15px;
+    }
+    .country{
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .date{
+        margin-bottom: 70px;
+        margin-left: 85px;
+    }
+    .plus-sign{
+        margin-left: 47%;
+        margin-bottom: 5px;
+        font-size: 50px;
+    }
+}
