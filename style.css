@@ -1,126 +1,126 @@
-body{
-    background-color: black;
-}
-.worldClockBox{
-    position: absolute;
-    top: 55%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-weight: bold;
-    font-family: Arial, sans-serif; 
-    padding: 10px 20px;
-    border: 3px solid rgba(16, 210, 224, 0.6);
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 60px rgba(16, 210, 224, 0.6);
-    height: 600px;
-    margin-top: -30px;
-    background-color: black;
-    transition: 1s ease-in-out;
-}
-.worldClockBox1{
-    position: absolute;
-    top: 55%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-weight: bold;
-    font-family: Arial, sans-serif; 
-    padding: 10px 20px;
-    border: 3px solid rgba(16, 210, 224, 0.6);
-    width: 305px;
-    border-radius: 10px;
-    box-shadow: 0 0 60px rgba(16, 210, 224, 0.6);
-    height: 570px;
-    margin-top: -30px;
-    background-color: black;
-    transition: 1s ease-in-out;
-}
-.wrapper.active .worldClockBox1{
-    transform: translateY(-450px);
-}
-h1{
-    margin-bottom: 98px;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-    font-size: 42px;
-    color: orange;
-}
-.h1-title{
-    margin-top: -1px;
-}
-.ixesha{
-    margin-bottom: 118px;
-    margin-left: 60px;
-    font-size: 40px;
-  color: orange;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
 }
 
-.clock-system{
-    font-size: 15px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+.wrapper{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    background: #000;
+    box-shadow: 0 0 70px #0ef;
+    border-radius: 10px;
+   
+}
+.world-clock-homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.wrapper-alarm {
+    box-shadow: 0 0 50px rgb(225, 90, 113);
+    position: relative;
+    width: 350px;
+    height: 550px;
+    background: #000;
+    border-radius: 10px;
+   
+}
+.wrapper-stopwatch{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    background: #000;
+    box-shadow: 0 0 70px rgb(44, 192, 44);
+    border-radius: 10px;
+}
+.wrapper-timer{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    background: #000;
+    box-shadow: 0 0 70px rgb(216, 144, 10);
+    border-radius: 10px;
+   
+}
+h2{
+    font-size: 43px;
+    color: #0ef;
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+.time span{
+    font-size: 40px;
+    width:40px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    left: 17%;
+    margin-bottom: 60px;
+    color:#0ef;
 }
 .country{
-    font-size: 20px;
-    margin-left: 30px;
-    color: orange;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    color:#0ef;
 }
-.ngubani{
-    margin-bottom: 68px;
+.date span{
     font-size: 13px;
-    margin-left: 110px;
-    font-weight: normal;
-   color: orange;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    left: 30%;
+    margin-bottom: 100px;
+    color:#0ef;
+}
+.day{
+    margin-left: -30px;
+    
+}
+.month{
+    margin-left: -10px;
 }
 .plus-sign{
-    cursor: pointer;
-    margin-bottom: 5px;
-    margin-left: 25%;
-    font-size: 60px;
-    font-weight: 400;
-    color: rgb(239, 11, 68);
-}
-.role{
-    color: rgba(16, 210, 224, 0.6) ;
-    margin-left: 15px;
-    font-size: 20px;
-}
-.role1{
-    margin-top: 113px;
-    margin-left: 120px;
-    font-size: 20px;
-    color: rgba(16, 210, 224, 0.6) ;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -30px;
+    color:#0ef;
 }
 a{
-    text-decoration: none;
+    text-decoration: 0;
+    color:#0ef;
 }
-@media(max-width: 576px){
-    .world-clock-box{
-        width: 310px;
-        height: 500px;
-        margin-top: -50px;
-    }
-    h1{
-        font-size: 35px;
-        margin-bottom: 90px;
-    }
-    .ixesha{
-        margin-left: 60px;
-        margin-bottom: 70px;
-        font-size: 30px
-    }
-    .clock-system{
-        font-size: 15px;
-    }
-    .country{
-        font-size: 18px;
-        margin-left: 15px;
-    }
-    .date{
-        margin-bottom: 70px;
-        margin-left: 85px;
-    }
-    .plus-sign{
-        margin-left: 47%;
-        margin-bottom: 5px;
-        font-size: 50px;
-    }
+.sections{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: -10px;
+    
+}
+.home{
+    margin: 35px;
+}
+.alarm{
+    margin: 35px;
+}
+.stopwatch{
+    margin: 35px;
+}
+.timer{
+    margin: 35px;
 }
