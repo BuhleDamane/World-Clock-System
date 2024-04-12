@@ -1,10 +1,20 @@
-let worldClockHomepageLink = document.querySelector(".worldClockHomepageLink");
-let worldClockAlarmLink = document.querySelector(".worldClockAlarm");
-let worldClockStopwatchLink = document.querySelector(".worldClockStopwatchLink");
-let worldClockTimerLink = document.querySelector(".worldClockTimerLink");
-let wrapper = document.querySelector(".wrapper");
+let hrs = document.getElementById("hrs");
+let min = document.getElementById("min");
+let sec = document.getElementById("sec");
 
-worldClockHomepageLink.addEventListener("click", () =>{
-wrapper.classList.toggle("active")
-});
+setInterval(() => {
+    let currentTime = new Date();
 
+hrs.innerHTML = (currentTime.getHours() <10?"0":"") + currentTime.getHours();
+min.innerHTML = (currentTime.getMinutes() <10?"0":"") + currentTime.getMinutes();
+sec.innerHTML = (currentTime.getSeconds() <10?"0":"") + currentTime.getSeconds();
+}, 1000);
+
+let ixesha = new Date;
+let ixesha = document.querySelector(".ixesha");
+
+let  date = now.getDate();
+let day = now.getDay();
+let month = now.getMonth();
+
+ixesha.innerHTML = `${day}, ${date} ${month}`
