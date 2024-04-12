@@ -10,11 +10,3 @@ min.innerHTML = (currentTime.getMinutes() <10?"0":"") + currentTime.getMinutes()
 sec.innerHTML = (currentTime.getSeconds() <10?"0":"") + currentTime.getSeconds();
 }, 1000);
 
-let ixesha = new Date;
-let ixesha = document.querySelector(".ixesha");
-
-let  date = now.getDate();
-let day = now.getDay();
-let month = now.getMonth();
-
-ixesha.innerHTML = `${day}, ${date} ${month}`
