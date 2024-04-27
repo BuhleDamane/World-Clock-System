@@ -12,48 +12,21 @@ body{
     min-height: 100vh;
     background-color: #000;
 }
+/*  index starts  */
 .wrapper{
     position: relative;
     width: 350px;
     height: 550px;
     background: #000;
-    box-shadow: 0 0 70px #0ef;
     border-radius: 10px;
-   
+    border: 2px solid #0ef;
 }
 .world-clock-homepage{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-
-}
-.wrapper-alarm {
-    box-shadow: 0 0 50px rgb(225, 90, 113);
-    position: relative;
-    width: 350px;
-    height: 550px;
-    background: #000;
-    border-radius: 10px;
-   
-}
-.wrapper-stopwatch{
-    position: relative;
-    width: 350px;
-    height: 550px;
-    background: #000;
-    box-shadow: 0 0 70px rgb(44, 192, 44);
-    border-radius: 10px;
-}
-.wrapper-timer{
-    position: relative;
-    width: 350px;
-    height: 550px;
-    background: #000;
-    box-shadow: 0 0 70px rgb(216, 144, 10);
-    border-radius: 10px;
-   
-}
 h2{
     font-size: 43px;
     color: #0ef;
@@ -101,10 +74,6 @@ h2{
     margin-bottom: -30px;
     color:rgb(202, 26, 55);
 }
-a{
-    text-decoration: 0;
-    color:#0ef;
-}
 .sections{
     display: flex;
     justify-content: center;
@@ -112,6 +81,11 @@ a{
     margin-left: -10px;
     
 }
+a{
+    text-decoration: 0;
+    color:#0ef;
+}
+
 .home{
     margin: 35px;
 }
@@ -124,3 +98,59 @@ a{
 .timer{
     margin: 35px;
 }
+
+/* index ends */
+
+/* world starts */
+.world{
+    border: 2px solid rgb(226, 13, 159);
+    color: white;
+
+}
+.header{
+    margin-top: 10px;
+    padding: 0 16px;
+    margin-bottom: 20px;
+}
+.search-city{
+    padding: 0 20px;
+}
+input{
+    margin-top: 10px;
+    width: 310px;
+    padding: 0 30px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid rgb(226, 13, 159);
+    outline: 0;
+    background-color: rgba(61, 57, 57, 0.765);
+}
+option{
+    margin-top: 20px;
+    
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+
+/* world ends */
+
+/* alarm starts */
+.alarm {
+    border: 2px solid rgb(225, 90, 113);
+}
+/* alarm ends */
+
+/* stopwatch starts */
+.stopwatch{
+    border: 2px solid rgb(0, 255, 94);
+}
+
+/* stopwatch ends */
+
+/* timer starts */
+.timer{
+    border: 2px solid rgb(255, 221, 0);
+}
+
+/* timer ends */
